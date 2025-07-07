@@ -725,6 +725,10 @@ section,
   transition: 0.9s;
   background-color: var(--accent-color);
 }
+.skills .w-85 { width: 85%; }
+.skills .w-80 { width: 80%; }
+.skills .w-75 { width: 75%; }
+.skills .w-65 { width: 65%; }
 
 /*--------------------------------------------------------------
 # Resume Section
