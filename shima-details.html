@@ -1,0 +1,210 @@
+<section id="portfolio-details" class="portfolio-details section-bg">
+  <div class="container">
+
+    <div class="row gy-4">
+      <!-- Image slider -->
+      <div class="col-lg-8">
+        <div class="portfolio-details-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="img/shima-1.jpeg" alt="Web Page UI">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/shima-2.jpeg" alt="About the Project">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/shima-3.jpeg" alt="Implementation">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/shima-4.jpeg" alt="Generating SHIMA">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/shima-5.jpeg" alt="Contact Info">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- Project Info -->
+      <div class="col-lg-4">
+        <div class="portfolio-info">
+          <h3><i class="fas fa-info-circle"></i> Project Information</h3>
+          <ul>
+            <li><strong>🔖 Title:</strong> SHIMA Secure Messaging</li>
+            <li><strong>📁 Category:</strong> Cybersecurity</li>
+            <li><strong>💻 Tech Stack:</strong> Python, HTML, CSS, JavaScript</li>
+            <li><strong>🔗 Project URL:</strong> <a href="#">Coming Soon</a></li>
+          </ul>
+        </div>
+
+        <div class="portfolio-description">
+          <h2>🚀 Enhancing Network Security Through SHIMA</h2>
+          <p>
+            This prototype demonstrates <strong>SHIMA</strong> — a secure hashed identity-based message authentication system built to safeguard communication channels by preventing tampering, spoofing, and unauthorized access.
+          </p>
+          <ul class="features-list">
+            <li>🔐 <strong>Secure Token Verification</strong> — Ensures sender authenticity</li>
+            <li>🔏 <strong>Cryptographic Hashing</strong> — Maintains message integrity</li>
+            <li>🖥️ <strong>Interactive UI</strong> — Simulates message flow in real-time</li>
+            <li>⚙️ <strong>Python Backend</strong> — Processes authentication and hashing logic</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<style>
+  /* Body background with dimmed image */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url("img/shima-1.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(18, 18, 18, 0.371); /* dark overlay */
+    z-index: -1;
+  }
+
+  /* Section Layout */
+  .portfolio-details {
+    padding: 60px 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+  }
+
+  /* Container */
+  .portfolio-details .container {
+    max-width: 1100px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* glass-like card */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Swiper Slider - Smaller height */
+  /* Swiper Slider - Slightly Larger Height */
+.portfolio-details-slider {
+  max-height: 450px; /* previously 250px */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-details-slider .swiper-slide img {
+  width: 100%;
+  height: 450px; /* previously 250px */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+  /* Project Info Panel */
+  .portfolio-info {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    font-size: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+  }
+
+  .portfolio-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+  }
+
+  .portfolio-info ul li {
+    padding: 6px 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .portfolio-description {
+    margin-top: 30px;
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .portfolio-description h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #002855;
+  }
+
+  .portfolio-description ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .portfolio-description ul li {
+    padding: 8px 0;
+    font-size: 18px;
+  }
+
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .portfolio-details .row {
+      flex-direction: column;
+    }
+
+    .portfolio-details-slider .swiper-slide img {
+      height: auto;
+    }
+
+    .portfolio-info,
+    .portfolio-description {
+      text-align: center;
+    }
+
+    .portfolio-info ul,
+    .portfolio-description ul {
+      text-align: center;
+    }
+  }
+</style>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  new Swiper('.portfolio-details-slider', {
+    speed: 300,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    }
+  });
+</script>
