@@ -1060,6 +1060,40 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+/* Contact Form Styling */
+.php-email-form input,
+.php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-shadow: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.php-email-form input:focus,
+.php-email-form textarea:focus {
+  border-color: #149ddd;
+  outline: none;
+}
+
+.php-email-form button[type=submit] {
+  background: #149ddd;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.php-email-form button[type=submit]:hover {
+  background: #0a7fc2;
+}
+
 .contact .info-wrap {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
