@@ -1,23 +1,10 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
@@ -27,7 +14,6 @@
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
@@ -37,7 +23,6 @@
   --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #f4fafd;
@@ -57,9 +42,6 @@
   scroll-behavior: smooth;
 }
 
-/*--------------------------------------------------------------
-# General Styling & Shared Classes
---------------------------------------------------------------*/
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -142,6 +124,17 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  main.main {
+    padding-left: 10px; /* Creates a gap from the sidebar */
+  }
+
+  .section-title,
+  .resume .resume-title,
+  .resume .resume-item {
+    margin-left: 10px; /* Optional: additional fine-tuning inside each section */
+  }
+}
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -627,6 +620,22 @@ section,
 }
 
 /*--------------------------------------------------------------
+# project Section
+--------------------------------------------------------------*/
+#project .btn {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border-radius: 50px;
+  padding: 10px 25px;
+  transition: background 0.3s ease;
+}
+
+#project .btn:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+
+/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about .content h2 {
@@ -720,15 +729,11 @@ section,
 }
 
 .skills .progress-bar {
-  width: 0px;
+  width: 1px;
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
 }
-.skills .w-85 { width: 85%; }
-.skills .w-80 { width: 80%; }
-.skills .w-75 { width: 75%; }
-.skills .w-65 { width: 65%; }
 
 /*--------------------------------------------------------------
 # Resume Section
