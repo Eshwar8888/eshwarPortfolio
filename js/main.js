@@ -85,7 +85,7 @@
 
   /**
    * Init typed.js
-   */
+   
   const selectTyped = document.querySelector('.typed');
   if (selectTyped) {
     let typed_strings = selectTyped.getAttribute('data-typed-items');
@@ -98,7 +98,7 @@
       backDelay: 2000
     });
   }
-
+*/
   /**
    * Initiate Pure Counter
    */
